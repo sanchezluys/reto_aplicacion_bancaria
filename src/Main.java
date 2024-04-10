@@ -1,9 +1,8 @@
-import com.sun.source.tree.SwitchTree;
-
+import java.io.IOException;
 import java.util.Scanner;
-
+//***
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Iniciando el reto de App Bancaria");
 
 
@@ -19,6 +18,7 @@ public class Main {
         int opcion = 1;
         int saldo=1500;
         Scanner teclado = new Scanner(System.in);
+
         //****************
         while (ciclo) {
             System.out.println("** *********************** ***");
@@ -36,14 +36,17 @@ public class Main {
                 case 1:
                     // Código para consultar saldo
                     System.out.println("Seleccionó Consultar Saldo");
+                    System.in.read();
                     break;
                 case 2:
                     // Código para realizar un saque
                     System.out.println("Seleccionó Retirar");
+                    System.in.read();
                     break;
                 case 3:
                     // Código para realizar un depósito
                     System.out.println("Seleccionó Depositar");
+                    System.in.read();
                     break;
                 case 4:
                     // Código para salir del programa
